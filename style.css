@@ -46,6 +46,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     transition: .2s ease-in-out;
+    z-index: 100!important;
 }
 
 nav ul{
@@ -229,7 +230,6 @@ nav #menu{
     position: absolute;
     top: 1rem;
     padding: 1rem;
-    background-color: #191a1f;
     transition: all 0.15s ease-in-out;
     overflow: hidden;
 }
@@ -407,7 +407,7 @@ margin-top: 10rem;
     background-image: conic-gradient(#7946e6 0turn var(--degrees), #22222200 0turn);
 
 }
-#html{
+#ux{
     background-image: conic-gradient(#4ce584 0turn var(--degrees), #22222200 0turn);
 
 }
@@ -432,9 +432,9 @@ margin-top: 10rem;
     
     
 }
-@keyframes html {
+@keyframes ux {
     to{
-        --degrees: 300deg
+        --degrees: 200deg
     }
     
 }
@@ -462,7 +462,7 @@ margin-top: 10rem;
 
 @media screen and (max-height: 1070px) and (max-width: 600px) {
     .about-container {
-        width: 100%;
+        width: 90%;
         top: 1rem;
 
     }
@@ -473,14 +473,12 @@ margin-top: 10rem;
         margin-bottom: 0.3rem;
         padding-bottom: 0.3rem;
     }
-    .go{
-        height: 5dvh;
-    }
+
 
 }
 @media (max-height: 850px) and (max-width: 700px) {
     .about-container {
-        width: 100%;
+        width: 90%;
         top: 1rem;
         padding: .5rem;
 
@@ -516,7 +514,12 @@ margin-top: 10rem;
         width: 7rem;
     }
     .skills-container #arrow-down{
-        margin-top: 12rem;
+        margin-top: 5rem;
     }
  
+}
+@media (max-width: 680px){
+    .about-container{
+        width: 100%;
+    }
 }

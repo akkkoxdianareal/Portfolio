@@ -31,27 +31,24 @@ aboutMeBtn.addEventListener('click', ()=>{
 })
 // On scroll fixed navbar
 const navbar = document.querySelector('#navbar')
-const sizeWindow = window.innerHeight/1.6
-
+const sizeWindow = window.innerHeight/1.5
 window.addEventListener('scroll', ()=>{
     let skills = document.querySelector('#skills')
     let innerScroll = skills.getBoundingClientRect().top;
-    console.log(innerScroll)
-    console.log( sizeWindow)
     let js = document.querySelector('#js')
     let react = document.querySelector('#react')
     let css = document.querySelector('#css')
-    let html = document.querySelector('#html')
+    let ux = document.querySelector('#ux')
     if( innerScroll < sizeWindow){
         js.style.animation = 'js 1.5s ease forwards'
         react.style.animation = 'react 1.5s ease forwards'
         css.style.animation = 'css 1.5s ease forwards'
-        html.style.animation = 'html 1.5s ease forwards'
+        ux.style.animation = 'ux 1.5s ease forwards'
     }
     else{
         js.style.animation = ''
         react.style.animation = ''
         css.style.animation = ''
-        html.style.animation = ''
+        ux.style.animation = ''
     }
 })
