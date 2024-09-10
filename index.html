@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Giuliano Zerda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Loading -->
+    <div class="loader">
+        <div class="icon"></div>
+        <div class="icon2"></div>
+
+    </div>
+
+    <header id="header">
+        <!-- nav -->
+        <nav id="navbar">
+            <!-- Name -->
+            <h2 class="my-name">Giuliano Zerda</h2>
+            <!-- Hamburguer Menu -->
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <!-- List -->
+            <ul>
+                <li><a href="#header">Inicio</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <button id="btn-contact">Contacto</button>
+            </ul>
+        </nav>
+
+        <!-- hero -->
+        <div class="hero">
+            <!-- photo and name -->
+            <div class="me-hero">
+                <img src="img1.png">
+                <div class="hero-text">
+                    <h1>Giuliano Zerda</h1>
+                    <p>Desarrollador Front-End en formación.</p>
+                </div>
+            </div>
+            <div id="particles-js"></div>
+
+        </div>
+        <div class="about-me">
+            <div class="about-btns">
+                <button class="activeBtn" id="sobremi" data-id="about-1">Sobre mi</button>
+                <button id="intereses" data-id="about-2">Intereses</button>
+            </div>
+            <div class="about-content">
+                <div class="about-container active" id="about-me">
+                    <h3>Sobre mi</h3>
+                    <p>Soy de Rosario de la Frontera, Salta, Argentina. Estoy cursando mis estudios secundarios en una
+                        escuela tecnica, me apasiona mucho la programación y resolver problemas logicos.<br>Me gustá
+                        mucho
+                        mi pueblo y suelo tomar fotos de el</p>
+                </div>
+                <div class="about-container" id="interest">
+                    <h3>Intereses</h3>
+                    <p>Me interesa el dibujo, la musica y la programación.
+                        Generalmente compongo mis propias canciones o dibujo la mayoria del tiempo.
+                        Tambien me encantan los videojuegos independientes y sueño con hacer alguno algún día.</p>
+                </div>
+            </div>
+        </div>
+        <div class="go">
+            <a href="#skills" id="arrow-down"><i class="fa-solid fa-angle-down" ></i></a>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="skills-container" id="skills">
+            <div id="skills-cont">
+                <h3>Habilidades</h3>
+                <div class="skill-progress">
+                    <!-- JS -->
+                    <div class="javascript">
+                        <div class="progress" id="js">
+                            <h2 id="title">JS</h2>
+                        </div>
+                    </div>
+                    <!-- React -->
+                    <div class="react">
+
+
+                        <div class="progress" id="react">
+                            <h2 id="title">React</h2>
+                        </div>
+                    </div>
+                    <!-- CSS -->
+                    <div class="css">
+
+
+                        <div class="progress" id="css">
+                            <h2 id="title">CSS</h2>
+                        </div>
+                    </div>
+                    <!-- Html -->
+                    <div class="html">
+
+
+                        <div class="progress" id="html">
+                            <h2 id="title">Html</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="go">
+                    <a href="#projects" id="arrow-down"><i class="fa-solid fa-angle-down" ></i></a>
+                </div>
+        </div>
+        <div class="projects-container" id="projects">
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="particles.min.js"></script>
+    <script>
+        particlesJS({
+            "particles": {
+                "number": {
+                    "value": 166,
+                    "density": {
+                        "enable": true,
+                        "value_area": 2604.1872173865
+                    }
+                },
+                "color": {
+                    "value": "#556172"
+                },
+                "shape": {
+                    "type": "triangle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 6
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.8337742716500719,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1.603412060865523,
+                    "direction": "top-right",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "window",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": false,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 158.35505639876231,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        })
+    </script>
+    <script src="https://kit.fontawesome.com/2a3113b188.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
