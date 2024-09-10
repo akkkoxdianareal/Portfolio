@@ -38,17 +38,6 @@ window.addEventListener('scroll', ()=>{
     let innerScroll = skills.getBoundingClientRect().top;
     console.log(innerScroll)
     console.log( sizeWindow)
-    if( innerScroll < sizeWindow){
-        let hero = document.querySelector('.hero')
-        hero.style.height = '45dvh'
-        navbar.style.position = 'fixed'
-        navbar.style.top = 0
-        navbar.style.boxshadow = 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px'
-    }
-    else{
-        navbar.style.height = '7dvh'
-        navbar.style.position = 'relative'
-    }
     let js = document.querySelector('#js')
     let react = document.querySelector('#react')
     let css = document.querySelector('#css')
