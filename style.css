@@ -339,7 +339,7 @@ nav #menu {
     border-radius: 1000px;
     height: 3rem;
     width: 3rem;
-    top: -1rem;
+    top: 0rem;
     animation: abajo 1s infinite alternate ease;
     font-size: 24px;
     z-index: 100 !important;
