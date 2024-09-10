@@ -339,7 +339,7 @@ nav #menu {
     border-radius: 1000px;
     height: 3rem;
     width: 3rem;
-    top: 0rem;
+    top: 0;
     animation: abajo 1s infinite alternate ease;
     font-size: 24px;
     z-index: 100 !important;
@@ -355,12 +355,12 @@ nav #menu {
 @keyframes abajo {
     from {
         opacity: 0.5;
-        top: -3rem;
+        top: -1.5rem;
     }
 
     to {
         opacity: 1;
-        top: -2rem;
+        top: -1rem;
     }
 
 }
