@@ -29,9 +29,9 @@ aboutMeBtn.addEventListener('click', ()=>{
     let aboutMeContainer = document.querySelector('#about-me')
     aboutMeContainer.classList.add('active')
 })
-// On scroll fixed navbar
-const navbar = document.querySelector('#navbar')
-const sizeWindow = window.innerHeight/1.5
+// On scroll animation
+const sizeWindow1 = window.innerHeight/1.5
+const sizeWindow2 = window.innerHeight/1.05
 window.addEventListener('scroll', ()=>{
     let skills = document.querySelector('#skills')
     let innerScroll = skills.getBoundingClientRect().top;
@@ -39,7 +39,7 @@ window.addEventListener('scroll', ()=>{
     let react = document.querySelector('#react')
     let css = document.querySelector('#css')
     let ux = document.querySelector('#ux')
-    if( innerScroll < sizeWindow){
+    if( innerScroll < sizeWindow1){
         js.style.animation = 'js 1.5s ease forwards'
         react.style.animation = 'react 1.5s ease forwards'
         css.style.animation = 'css 1.5s ease forwards'
@@ -51,4 +51,16 @@ window.addEventListener('scroll', ()=>{
         css.style.animation = ''
         ux.style.animation = ''
     }
+
+})
+// responsive navbar
+const navbar = document.querySelector('#navbar')
+const ul = navbar.querySelector('ul')
+const menu = navbar.querySelector('#menu')
+const closeMenu = navbar.querySelector('#closeMenu')
+menu.addEventListener('click', ()=>{
+    ul.classList.add('menuActive')
+})
+closeMenu.addEventListener('click', ()=>{
+    ul.classList.remove('menuActive')
 })
