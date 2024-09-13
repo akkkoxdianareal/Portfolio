@@ -32,6 +32,7 @@ aboutMeBtn.addEventListener('click', ()=>{
 // On scroll animation
 const sizeWindow1 = window.innerHeight/1.5
 const sizeWindow2 = window.innerHeight/1.05
+// const newNavbar = body.createElement('nav')
 window.addEventListener('scroll', ()=>{
     let skills = document.querySelector('#skills')
     let innerScroll = skills.getBoundingClientRect().top;
@@ -40,6 +41,7 @@ window.addEventListener('scroll', ()=>{
     let css = document.querySelector('#css')
     let ux = document.querySelector('#ux')
     if( innerScroll < sizeWindow1){
+        // document.append(newNavbar)
         js.style.animation = 'js 1.5s ease forwards'
         react.style.animation = 'react 1.5s ease forwards'
         css.style.animation = 'css 1.5s ease forwards'
@@ -63,4 +65,9 @@ menu.addEventListener('click', ()=>{
 })
 closeMenu.addEventListener('click', ()=>{
     ul.classList.remove('menuActive')
+})
+document.addEventListener('click',  (e)=>{
+    if (!ul.contains(e.target) && e.target !== menu){
+        ul.classList.remove('menuActive')
+    }
 })
